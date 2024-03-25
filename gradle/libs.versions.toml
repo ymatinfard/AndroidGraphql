@@ -9,6 +9,12 @@ lifecycleRuntimeKtx = "2.7.0"
 activityCompose = "1.8.2"
 composeBom = "2023.08.00"
 graphql = "3.8.3"
+hilt-version = "2.50"
+hilt-android = "2.50"
+hilt-navigation-compose = "1.2.0"
+dagger-compiler = "2.50"
+ksp-version = "1.9.20-1.0.14"
+
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -25,11 +31,15 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
-apollo-graphql-runtime = {group = "com.apollographql.apollo3", name = "apollo-runtime", version.ref = "graphql"}
-#apollo-graphql-coroutine-support = {group = "com.apollographql.apollo", name = "apollo-coroutines-support", version.ref = "graphql"}
+apollo-graphql-runtime = { group = "com.apollographql.apollo3", name = "apollo-runtime", version.ref = "graphql"}
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt-android" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
+dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger-compiler" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 apolloGraphql = {id = "com.apollographql.apollo3", version.ref = "graphql"}
+hilt = {id = "com.google.dagger.hilt.android", version.ref = "hilt-version"}
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp-version"}
 
