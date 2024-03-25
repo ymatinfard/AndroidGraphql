@@ -1,9 +1,9 @@
 package com.example.androidgraphql.data
 
 import com.apollographql.apollo3.ApolloClient
-import com.example.androidgraphql.domain.CountryModel
+import com.example.androidgraphql.domain.model.CountryModel
 import com.example.androidgraphql.domain.CountryClient
-import com.example.androidgraphql.domain.CountryDetailedModel
+import com.example.androidgraphql.domain.model.CountryDetailedModel
 import com.graphql.CountriesQuery
 import com.graphql.CountryQuery
 

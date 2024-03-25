@@ -1,6 +1,4 @@
-package com.example.androidgraphql.domain
-
-import com.graphql.CountryQuery
+package com.example.androidgraphql.domain.model
 
 
 data class CountryDetailedModel(
