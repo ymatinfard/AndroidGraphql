@@ -4,6 +4,12 @@ plugins {
     alias(libs.plugins.apolloGraphql)
 }
 
+apollo {
+    service("service") {
+        packageName.set("com.graphql")
+    }
+}
+
 android {
     namespace = "com.example.androidgraphql"
     compileSdk = 34
@@ -62,7 +68,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.apollo.graphql.runtime)
-    implementation(libs.apollo.graphql.coroutine.support)
+//    implementation(libs.apollo.graphql.coroutine.support)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
